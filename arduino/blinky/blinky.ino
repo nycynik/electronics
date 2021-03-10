@@ -1,4 +1,6 @@
 int RED_LED=2;
+int SWITCH=4;
+
 int DELAY=1000;
 
 void setup() {
@@ -6,6 +8,7 @@ void setup() {
   Serial.begin(9600);
   
   pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(SWITCH, INPUT_PULLUP);
   pinMode(RED_LED, OUTPUT);
 }
 
